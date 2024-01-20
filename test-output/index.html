@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>testng.xml</span>
+                    <span>purchaseEach.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,  1 skipped,  3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,24 +103,10 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="somoCompany.Tests.appValidationsTest" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="somoCompany.Tests.appValidationsTest" class="method navigator-link" hash-for-method="submitOrder({email=som@gmail.com, password=Somosom@77, productName=ADIDAS2 ORIGINAL})">submitOrder({email=som@gmail.com, password=Somosom@77, productName=ADIDAS2 ORIGINAL})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="somoCompany.Tests.appValidationsTest" class="method navigator-link" hash-for-method="orderHistoryCheck">orderHistoryCheck</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,17 +117,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="somoCompany.Tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="invalidLoginTest">invalidLoginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="somoCompany.Tests.appValidationsTest" class="method navigator-link" hash-for-method="submitOrder({email=som@gmail.com, password=Somosom@77, productName=ZARA COAT 3})">submitOrder({email=som@gmail.com, password=Somosom@77, productName=ZARA COAT 3})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="somoCompany.Tests.appValidationsTest" class="method navigator-link" hash-for-method="submitOrder2">submitOrder2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="somoCompany.Tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="submitOrder3">submitOrder3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="somoCompany.Tests.appValidationsTest" class="method navigator-link" hash-for-method="submitOrder({email=som@gmail.com, password=Somosom@77, productName=IPHONE 13 PRO})">submitOrder({email=som@gmail.com, password=Somosom@77, productName=IPHONE 13 PRO})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -164,77 +145,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrder">
-                  </a> <!-- submitOrder -->
+                  <a name="submitOrder({email=som@gmail.com, password=Somosom@77, productName=ADIDAS2 ORIGINAL})">
+                  </a> <!-- submitOrder({email=som@gmail.com, password=Somosom@77, productName=ADIDAS2 ORIGINAL}) -->
                   <span class="method-name">submitOrder</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.io.FileNotFoundException: /Users/som/Desktop/AI/SeleniumFrameworkDesign/src/main/java/somoCompany/resources/data.json (No such file or directory)
+                  <span class="parameters">({email=som@gmail.com, password=Somosom@77, productName=ADIDAS2 ORIGINAL})</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;somoCompany.pageObjects.ProductCatalogue.getProductByName(String)&quot; is null
+	at somoCompany.pageObjects.ProductCatalogue.addToCart(ProductCatalogue.java:62)
+	at somoCompany.Tests.appValidationsTest.submitOrder(appValidationsTest.java:50)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.FileNotFoundException: /Users/som/Desktop/AI/SeleniumFrameworkDesign/src/main/java/somoCompany/resources/data.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.fasterxml.jackson.core.TokenStreamFactory._fileInputStream(TokenStreamFactory.java:278)
-	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1089)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3657)
-	at somoCompany.TestComponents.BaseTest.readJsonFile(BaseTest.java:87)
-	at somoCompany.Tests.appValidationsTest.getData(appValidationsTest.java:113)
-	... 19 more
-... Removed 22 stack frames
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">somoCompany.Tests.appValidationsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="orderHistoryCheck">
-                  </a> <!-- orderHistoryCheck -->
-                  <span class="method-name">orderHistoryCheck</span>
-                  <div class="stack-trace">java.lang.Throwable: Method somoCompany.Tests.appValidationsTest.orderHistoryCheck() on instance somoCompany.Tests.appValidationsTest@60dce7ea depends on not successfully finished methods 
-[somoCompany.Tests.appValidationsTest.submitOrder() on instance somoCompany.Tests.appValidationsTest@60dce7ea]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 8 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">somoCompany.Tests.ErrorValidationsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidLoginTest">
-                  </a> <!-- invalidLoginTest -->
-                  <span class="method-name">invalidLoginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrder3">
-                  </a> <!-- submitOrder3 -->
-                  <span class="method-name">submitOrder3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -243,9 +171,18 @@ Caused by: java.io.FileNotFoundException: /Users/som/Desktop/AI/SeleniumFramewor
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrder2">
-                  </a> <!-- submitOrder2 -->
-                  <span class="method-name">submitOrder2</span>
+                  <a name="submitOrder({email=som@gmail.com, password=Somosom@77, productName=ZARA COAT 3})">
+                  </a> <!-- submitOrder({email=som@gmail.com, password=Somosom@77, productName=ZARA COAT 3}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({email=som@gmail.com, password=Somosom@77, productName=ZARA COAT 3})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({email=som@gmail.com, password=Somosom@77, productName=IPHONE 13 PRO})">
+                  </a> <!-- submitOrder({email=som@gmail.com, password=Somosom@77, productName=IPHONE 13 PRO}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({email=som@gmail.com, password=Somosom@77, productName=IPHONE 13 PRO})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,13 +190,23 @@ Caused by: java.io.FileNotFoundException: /Users/som/Desktop/AI/SeleniumFramewor
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/som/Documents/SeleniumFrameworkDesign/TestSuites/testng.xml</span>
+            <span class="header-content">/Users/som/Documents/SeleniumFrameworkDesign/TestSuites/purchaseEach.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;purchase&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;purchase&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Positive Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;somoCompany.Tests.appValidationsTest&quot;/&gt;
@@ -295,14 +242,6 @@ Caused by: java.io.FileNotFoundException: /Users/som/Desktop/AI/SeleniumFramewor
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">errorHandling</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">invalidLoginTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
               <span class="test-group-name">purchase</span>
               <br/>
               <div class="method-in-group">
@@ -326,32 +265,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'submitOrder3')
-data.setCell(0, 2, 'somoCompany.Tests.ErrorValidationsTest')
-data.setCell(0, 3, 45685);
+data.setCell(0, 1, 'submitOrder')
+data.setCell(0, 2, 'somoCompany.Tests.appValidationsTest')
+data.setCell(0, 3, 20186);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'submitOrder2')
+data.setCell(1, 1, 'submitOrder')
 data.setCell(1, 2, 'somoCompany.Tests.appValidationsTest')
-data.setCell(1, 3, 32623);
+data.setCell(1, 3, 19984);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidLoginTest')
-data.setCell(2, 2, 'somoCompany.Tests.ErrorValidationsTest')
-data.setCell(2, 3, 809);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'submitOrder')
-data.setCell(3, 2, 'somoCompany.Tests.appValidationsTest')
-data.setCell(3, 3, 0);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'orderHistoryCheck')
-data.setCell(4, 2, 'somoCompany.Tests.appValidationsTest')
-data.setCell(4, 3, 0);
+data.setCell(2, 1, 'submitOrder')
+data.setCell(2, 2, 'somoCompany.Tests.appValidationsTest')
+data.setCell(2, 3, 2036);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -366,9 +297,27 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">somoCompany.Tests.appValidationsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">orderHistoryCheck</span>
+                <br/>
+                <span class="ignored-method-name">submitOrder2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">somoCompany.Tests.ErrorValidationsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">invalidLoginTest</span>
+                <br/>
+                <span class="ignored-method-name">submitOrder3</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -377,60 +326,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">somoCompany.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">somoCompany.Tests.appValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initiateDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">somoCompany.Tests.appValidationsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initiateDriver</span>
-                <span class="method-start">74 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">somoCompany.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">invalidLoginTest</span>
-                <span class="method-start">3909 ms</span>
+                <span class="method-name">submitOrder({email=som@gmail.com, password=Somosom@77, productName=ZARA COAT 3})</span>
+                <span class="method-start">6252 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">somoCompany.Tests.appValidationsTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">submitOrder2</span>
-                <span class="method-start">3975 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">somoCompany.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4720 ms</span>
+                <span class="method-start">26237 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initiateDriver</span>
-                <span class="method-start">4832 ms</span>
+                <span class="method-start">26309 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">submitOrder3</span>
-                <span class="method-start">6645 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">submitOrder({email=som@gmail.com, password=Somosom@77, productName=ADIDAS2 ORIGINAL})</span>
+                <span class="method-start">28062 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">somoCompany.Tests.appValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36599 ms</span>
+                <span class="method-start">30100 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">somoCompany.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">30169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({email=som@gmail.com, password=Somosom@77, productName=IPHONE 13 PRO})</span>
+                <span class="method-start">33184 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52332 ms</span>
+                <span class="method-start">53371 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -2,6 +2,7 @@ package somoCompany.Tests;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
@@ -104,14 +105,14 @@ public class appValidationsTest extends BaseTest {
 	}
 	
 	@DataProvider
-	public Map<Object, Object> getData() throws Exception {
+	public Object[][] getData() throws Exception {
 		
 //		return new Object[][] {{"som@gmail.com", "Somosom@77","ADIDAS ORIGINAL"}, 
 //			{"som@gmail.com", "Somosom@77","IPHONE 13 PRO"},
 //			{"som@gmail.com", "Somosom@77","ZARA COAT 3"}};
 			
-			return readJsonFile("/Users/som/Desktop/AI/SeleniumFrameworkDesign/src/main/java/somoCompany/resources/data.json");			
-		
+		List<Map<Object, Object>> dd =  readJsonFile(System.getProperty("user.dir") + "/src/main/java/somoCompany/resources/data.json");			
+		return new Object[][]{{dd.get(0)}, {dd.get(1)}, {dd.get(2)}};
 	}
 
 }

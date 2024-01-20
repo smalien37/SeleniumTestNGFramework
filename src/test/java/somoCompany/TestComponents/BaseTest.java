@@ -3,19 +3,20 @@ package somoCompany.TestComponents;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import somoCompany.pageObjects.LandingPage;
@@ -81,27 +82,15 @@ public class BaseTest {
 		 return lp;
 	}
 	
-	public Map<Object, Object> readJsonFile(String path) throws Exception {
+	public List<Map<Object, Object>> readJsonFile(String path) throws Exception {
 		
 		 ObjectMapper mapper = new ObjectMapper();
-	        return mapper.readValue(new File(path), new TypeReference<Map<Object, Object>>() {});
-		
+		 String jsonContent = FileUtils.readFileToString(new File(path), StandardCharsets.UTF_8);
+		 
+	     List<Map<Object, Object>> data = mapper.readValue(jsonContent,  new TypeReference<List<Map<Object, Object>>>() {});
+	     
+	     return data;
 	}
-	
-	
-	/* 	
-	{
-		"email": "som@gmail.com",
-		"password": "Somosom@77",
-		"productName": "IPHONE 13 PRO"
-	},
-	
-	{
-		"email": "som@gmail.com",
-		"password": "Somosom@77",
-		"productName": "ZARA COAT 3"
-	}
-] */
 	
 	
 }
