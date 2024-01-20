@@ -2,13 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="Positive Tests(failed)">
+    <groups>
+      <run>
+        <include name="purchase"/>
+      </run>
+    </groups>
     <classes>
       <class name="somoCompany.Tests.appValidationsTest">
         <methods>
           <include name="tearDown"/>
           <include name="initiateDriver"/>
-          <include name="submitOrder"/>
-          <include name="orderHistoryCheck"/>
+          <include name="submitOrder" invocation-numbers="1"/>
         </methods>
       </class> <!-- somoCompany.Tests.appValidationsTest -->
     </classes>
