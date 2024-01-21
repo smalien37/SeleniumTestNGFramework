@@ -43,7 +43,7 @@ public class ErrorValidationsTest extends BaseTest{
 		
 		
 		llp.loginApplication("som6768gjj78@gmail.com", "Som987689@77");
-		screenShotTC();
+//		screenShotTC();
 
 		
 		AssertJUnit.assertEquals("Incorrect email or password.", llp.getErrorMessage());

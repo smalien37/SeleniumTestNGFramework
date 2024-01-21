@@ -93,10 +93,11 @@ public class BaseTest {
 		return data;
 	}
 
-	public String screenShotTC() {
+	public String screenShotTC(WebDriver driver) {
 
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File filePath = new File(System.getProperty("user.dir")+"/Screenshots/Evidence-" + System.currentTimeMillis() + ".png");
+		String k = System.getProperty("user.dir")+"/Screenshots/Evidence-" + System.currentTimeMillis() + ".png";
+		File filePath = new File(k);
 
 		try { // now copy the screenshot to desired location using copyFile method
 			
@@ -105,7 +106,7 @@ public class BaseTest {
 			System.out.println(e.getMessage());
 		}
 		
-		return filePath.getPath();
+		return k;
 		
 	}
 	
