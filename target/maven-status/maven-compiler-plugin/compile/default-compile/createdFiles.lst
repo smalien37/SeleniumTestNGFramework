@@ -1,0 +1,7 @@
+somoCompany/resources/ExtentReporterNG.class
+somoCompany/pageObjects/ProductCatalogue.class
+somoCompany/pageObjects/OrderIdPage.class
+somoCompany/AbstractComponents/AbstractComponent.class
+somoCompany/pageObjects/PaymentPage.class
+somoCompany/pageObjects/CartDetailsPage.class
+somoCompany/pageObjects/LandingPage.class
