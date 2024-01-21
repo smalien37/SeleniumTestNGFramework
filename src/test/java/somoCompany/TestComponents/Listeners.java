@@ -16,26 +16,33 @@ public class Listeners extends BaseTest implements ITestListener {
 	ExtentReports extent = ExtentReporterNG.getReportInstance();
 	ExtentTest test;
 	
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread Safe 
+	//This is necessary to keep onnly 1 thread for that particular object.
+	//This is cause when running parallel tests we might face such concurrency problem
+	
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestStart(result);
 		test = extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestSuccess(result);
-		test.log(Status.PASS, "Test Passed Successfully");
+		extentTest.get().log(Status.PASS, "Test Passed Successfully");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestFailure(result);
-		test.log(Status.FAIL, "Test Failed!!");
-		test.fail(result.getThrowable());
+		extentTest.get().log(Status.FAIL, "Test Failed!!");
+//		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
 		
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
@@ -45,14 +52,14 @@ public class Listeners extends BaseTest implements ITestListener {
 		}
 		
 		String fp = screenShotTC(driver);
-		test.addScreenCaptureFromPath(fp,"Error Evidence - Test Case Name");
+		extentTest.get().addScreenCaptureFromPath(fp,"Error Evidence - Test Case Name");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestSkipped(result);
-		test.log(Status.SKIP, "Test Skipped");
+		extentTest.get().log(Status.SKIP, "Test Skipped");
 	}
 
 	@Override

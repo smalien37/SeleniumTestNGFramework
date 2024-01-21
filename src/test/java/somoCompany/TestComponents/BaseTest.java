@@ -43,7 +43,12 @@ public class BaseTest {
 	public WebDriver initializeDriver() throws IOException {
 
 		Properties prop = readPropertyFile();
-		String browserName = prop.getProperty("browser");
+		
+		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser"):prop.getProperty("browser");
+		
+		//The above one is for the passing thebrowser from maven command
+		
+//		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", path + "/chromedriver");
