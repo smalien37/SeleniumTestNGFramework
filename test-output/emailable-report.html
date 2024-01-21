@@ -9,21 +9,58 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Positive Tests</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">83,788</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Negative Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">58,252</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Positive Tests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">106,808</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">165,060</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Positive Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">somoCompany.Tests.appValidationsTest</td><td><a href="#m0">submitOrder</a></td><td rowspan="1">1705846763146</td><td rowspan="1">2109</td></tr><tr><th colspan="4">Positive Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">somoCompany.Tests.appValidationsTest</td><td><a href="#m1">orderHistoryCheck</a></td><td rowspan="1">1705846821788</td><td rowspan="1">0</td></tr><tr><th colspan="4">Positive Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">somoCompany.Tests.appValidationsTest</td><td><a href="#m2">submitOrder</a></td><td rowspan="2">1705846767268</td><td rowspan="2">19791</td></tr><tr class="passedeven"><td><a href="#m3">submitOrder</a></td></tr><tr class="passedeven"><td><a href="#m4">submitOrder2</a></td><td rowspan="1">1705846788935</td><td rowspan="1">32738</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Negative Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">somoCompany.Tests.ErrorValidationsTest</td><td><a href="#m0">submitOrder3</a></td><td rowspan="1">1705848086588</td><td rowspan="1">50335</td></tr><tr><th colspan="4">Negative Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">somoCompany.Tests.ErrorValidationsTest</td><td><a href="#m1">invalidLoginTest</a></td><td rowspan="1">1705848082289</td><td rowspan="1">843</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Positive Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">somoCompany.Tests.appValidationsTest</td><td><a href="#m2">orderHistoryCheck</a></td><td rowspan="1">1705848185612</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m3">submitOrder</a></td><td rowspan="3">1705848081419</td><td rowspan="3">19805</td></tr><tr class="passedeven"><td><a href="#m4">submitOrder</a></td></tr><tr class="passedeven"><td><a href="#m5">submitOrder</a></td></tr><tr class="passedeven"><td><a href="#m6">submitOrder2</a></td><td rowspan="1">1705848149337</td><td rowspan="1">32815</td></tr></tbody>
 </table>
-<h2>Positive Tests</h2><h3 id="m0">somoCompany.Tests.appValidationsTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=som@gmail.com, password=Somosom@77, productName=ADIDAS2 ORIGINAL}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;somoCompany.pageObjects.ProductCatalogue.getProductByName(String)&quot; is null
-	at somoCompany.pageObjects.ProductCatalogue.addToCart(ProductCatalogue.java:62)
-	at somoCompany.Tests.appValidationsTest.submitOrder(appValidationsTest.java:50)
+<h2>Negative Tests</h2><h3 id="m0">somoCompany.Tests.ErrorValidationsTest#submitOrder3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Checkout&apos;)]&quot;}
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.5.1&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [10d9315edc6270457abb9f138f680cb4, findElement {using=xpath, value=//button[contains(text(),&apos;Checkout&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/c5/18j_52b17j5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10d9315edc6270457abb9f138f680cb4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
+	at somoCompany.pageObjects.CartDetailsPage.checkOut(CartDetailsPage.java:25)
+	at somoCompany.Tests.ErrorValidationsTest.submitOrder3(ErrorValidationsTest.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">somoCompany.Tests.appValidationsTest#orderHistoryCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method somoCompany.Tests.appValidationsTest.orderHistoryCheck() on instance somoCompany.Tests.appValidationsTest@24f43aa3 depends on not successfully finished methods 
-[somoCompany.Tests.appValidationsTest.submitOrder() on instance somoCompany.Tests.appValidationsTest@24f43aa3]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">somoCompany.Tests.appValidationsTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=som@gmail.com, password=Somosom@77, productName=IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">somoCompany.Tests.ErrorValidationsTest#invalidLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Positive Tests</h2><h3 id="m2">somoCompany.Tests.appValidationsTest#orderHistoryCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">somoCompany.Tests.appValidationsTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=som@gmail.com, password=Somosom@77, productName=ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">somoCompany.Tests.appValidationsTest#submitOrder2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">somoCompany.Tests.appValidationsTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=som@gmail.com, password=Somosom@77, productName=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">somoCompany.Tests.appValidationsTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=som@gmail.com, password=Somosom@77, productName=IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">somoCompany.Tests.appValidationsTest#submitOrder2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
