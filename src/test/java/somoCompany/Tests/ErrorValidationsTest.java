@@ -1,15 +1,10 @@
 package somoCompany.Tests;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-
-import junit.framework.Assert;
-
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -27,6 +22,7 @@ public class ErrorValidationsTest extends BaseTest{
 	String productName = "ADIDAS ORIGINAL";
 	String productName1 = "IPHONE 13 PRO";
 	String productName2 = "ZARA COAT 3";
+//	ExtentReports report;
 	
 	@BeforeMethod(alwaysRun = true)
 	public void initiateDriver() throws IOException {
@@ -36,15 +32,23 @@ public class ErrorValidationsTest extends BaseTest{
 		llp = new LandingPage(driver);
 		String url = prop.getProperty("url");
 		llp.goTo(url);
+//		report = getReportInstance();
 
 	}	
 	
 	@Test(groups = {"errorHandling"})
 	public void invalidLoginTest() {
 		
+//		report.createTest("Invalid Login test");
+		
+		
 		llp.loginApplication("som6768gjj78@gmail.com", "Som987689@77");
+//		screenShotTC();
+
 		
 		AssertJUnit.assertEquals("Incorrect email or password.", llp.getErrorMessage());
+//		tt.addScreenCaptureFromPath(System.getProperty("user.dir"));
+		
 	}
 
 	//For each java class categorize the test cases
@@ -83,7 +87,9 @@ public class ErrorValidationsTest extends BaseTest{
 	
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
+		
 		driver.close();
+//		report.flush();
 		
 		
 	}

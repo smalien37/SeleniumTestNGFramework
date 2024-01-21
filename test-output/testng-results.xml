@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-20T22:25:53 IST" name="Suite" finished-at="2024-01-20T22:26:46 IST" duration-ms="53583">
+  <suite started-at="2024-01-21T19:48:58 IST" name="Suite" finished-at="2024-01-21T19:50:21 IST" duration-ms="83788">
     <groups>
       <group name="purchase">
-        <method signature="appValidationsTest.submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" name="submitOrder" class="somoCompany.Tests.appValidationsTest"/>
+        <method signature="appValidationsTest.submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" name="submitOrder" class="somoCompany.Tests.appValidationsTest"/>
       </group> <!-- purchase -->
     </groups>
-    <test started-at="2024-01-20T22:25:53 IST" name="Negative Tests" finished-at="2024-01-20T22:25:53 IST" duration-ms="6">
-    </test> <!-- Negative Tests -->
-    <test started-at="2024-01-20T22:25:53 IST" name="Positive Tests" finished-at="2024-01-20T22:26:46 IST" duration-ms="53583">
+    <test started-at="2024-01-21T19:48:58 IST" name="Positive Tests" finished-at="2024-01-21T19:50:21 IST" duration-ms="83788">
       <class name="somoCompany.Tests.appValidationsTest">
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:25:53 IST" name="initiateDriver" finished-at="2024-01-20T22:25:59 IST" duration-ms="6250" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:48:58 IST" name="initiateDriver" finished-at="2024-01-21T19:49:00 IST" duration-ms="1919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:25:59 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-20T22:26:19 IST" duration-ms="19984" status="PASS">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:00 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-21T19:49:20 IST" duration-ms="20053" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +25,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:26:19 IST" name="tearDown" finished-at="2024-01-20T22:26:19 IST" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:20 IST" name="tearDown" finished-at="2024-01-21T19:49:20 IST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:26:19 IST" name="initiateDriver" finished-at="2024-01-20T22:26:21 IST" duration-ms="1753" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:20 IST" name="initiateDriver" finished-at="2024-01-21T19:49:23 IST" duration-ms="2967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:26:21 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-20T22:26:23 IST" duration-ms="2036" status="FAIL">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:23 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-21T19:49:25 IST" duration-ms="2109" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -67,27 +65,33 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:26:23 IST" name="tearDown" finished-at="2024-01-20T22:26:23 IST" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:25 IST" name="tearDown" finished-at="2024-01-21T19:49:25 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:26:23 IST" name="initiateDriver" finished-at="2024-01-20T22:26:26 IST" duration-ms="3014" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:25 IST" name="initiateDriver" finished-at="2024-01-21T19:49:27 IST" duration-ms="1746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:26:26 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-20T22:26:46 IST" duration-ms="20186" status="PASS">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:27 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-21T19:49:47 IST" duration-ms="19791" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,10 +102,56 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@7446d8d5]" started-at="2024-01-20T22:26:46 IST" name="tearDown" finished-at="2024-01-20T22:26:46 IST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:47 IST" name="tearDown" finished-at="2024-01-21T19:49:47 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:47 IST" name="initiateDriver" finished-at="2024-01-21T19:49:48 IST" duration-ms="1769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="submitOrder2()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:49:48 IST" name="submitOrder2" finished-at="2024-01-21T19:50:21 IST" duration-ms="32738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:50:21 IST" name="tearDown" finished-at="2024-01-21T19:50:21 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="orderHistoryCheck()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T19:50:21 IST" name="orderHistoryCheck" finished-at="2024-01-21T19:50:21 IST" depends-on-methods="somoCompany.Tests.appValidationsTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method somoCompany.Tests.appValidationsTest.orderHistoryCheck() on instance somoCompany.Tests.appValidationsTest@24f43aa3 depends on not successfully finished methods 
+[somoCompany.Tests.appValidationsTest.submitOrder() on instance somoCompany.Tests.appValidationsTest@24f43aa3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method somoCompany.Tests.appValidationsTest.orderHistoryCheck() on instance somoCompany.Tests.appValidationsTest@24f43aa3 depends on not successfully finished methods 
+[somoCompany.Tests.appValidationsTest.submitOrder() on instance somoCompany.Tests.appValidationsTest@24f43aa3]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryCheck -->
       </class> <!-- somoCompany.Tests.appValidationsTest -->
     </test> <!-- Positive Tests -->
   </suite> <!-- Suite -->

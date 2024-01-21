@@ -4,7 +4,9 @@
 	
 	<!-- If we want to run all the methods at once we need to put parallel="methods"-->
 	<!-- The thread-count gives us the ability that at a time maximum 5 methods can run parallely-->
-
+	<listeners>
+		<listener class-name="somoCompany.TestComponents.Listeners"></listener>
+	</listeners>
 	
   <test thread-count="5" name="Positive Tests">
 	  
@@ -13,13 +15,4 @@
     </classes>
     
   </test> <!-- Test -->
-  
-  <test thread-count="5" name="Negative Tests">
-    <classes>
-      <class name="somoCompany.Tests.ErrorValidationsTest"/>
-    </classes>
-  </test>  
 </suite> <!-- Suite -->
-
-
-

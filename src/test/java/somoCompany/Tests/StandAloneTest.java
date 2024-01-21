@@ -1,8 +1,6 @@
 package somoCompany.Tests;
 
 import java.time.Duration;
-import somoCompany.pageObjects.CartDetailsPage;
-import somoCompany.pageObjects.LandingPage;
 import java.util.List;
 
 import org.openqa.selenium.By;
