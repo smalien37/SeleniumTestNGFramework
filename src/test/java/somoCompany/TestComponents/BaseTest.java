@@ -110,25 +110,25 @@ public class BaseTest {
 	}
 	
 	
-	public  ExtentReports report;
-	public  ExtentSparkReporter htmlReporter;
-
-	public  ExtentReports getReportInstance() {
-
-		report = new ExtentReports();
-		 htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Report/report_"+System.currentTimeMillis()+".html");	
-		 htmlReporter.config().setDocumentTitle("Dummy Test Reports");
-			htmlReporter.config().setReportName("Hackathon COURSERA Test Report");
-			htmlReporter.config().setTheme(null);
-			
-			report.setSystemInfo("Machine", "Som-mac-mini");
-			report.setSystemInfo("Environment", "DevOps");
-			report.setSystemInfo("Browser", "Chrome");
-			report.setSystemInfo("OS", "MAC-OS");
-			report.setSystemInfo("Owner", "Soumyajit");
-			report.attachReporter(htmlReporter);
-			
-		return report;
-	}
+//	public  ExtentReports report;
+//	public  ExtentSparkReporter htmlReporter;
+//
+//	public  ExtentReports getReportInstance() {
+//
+//		report = new ExtentReports();
+//		 htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Report/report_"+System.currentTimeMillis()+".html");	
+//		 htmlReporter.config().setDocumentTitle("Dummy Test Reports");
+//			htmlReporter.config().setReportName("Hackathon COURSERA Test Report");
+//			htmlReporter.config().setTheme(null);
+//			
+//			report.setSystemInfo("Machine", "Som-mac-mini");
+//			report.setSystemInfo("Environment", "DevOps");
+//			report.setSystemInfo("Browser", "Chrome");
+//			report.setSystemInfo("OS", "MAC-OS");
+//			report.setSystemInfo("Owner", "Soumyajit");
+//			report.attachReporter(htmlReporter);
+//			
+//		return report;
+//	}
 
 }

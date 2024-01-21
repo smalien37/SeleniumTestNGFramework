@@ -32,7 +32,7 @@ public class ErrorValidationsTest extends BaseTest{
 		llp = new LandingPage(driver);
 		String url = prop.getProperty("url");
 		llp.goTo(url);
-		report = getReportInstance();
+//		report = getReportInstance();
 
 	}	
 	
