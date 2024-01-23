@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-22T23:14:22 IST" name="Suite" finished-at="2024-01-22T23:19:11 IST" duration-ms="288881">
+  <suite started-at="2024-01-23T23:27:44 IST" name="Suite" finished-at="2024-01-23T23:32:27 IST" duration-ms="283037">
     <groups>
       <group name="purchase">
         <method signature="appValidationsTest.submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" name="submitOrder" class="somoCompany.Tests.appValidationsTest"/>
@@ -11,13 +11,13 @@
         <method signature="ErrorValidationsTest.invalidLoginTest()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" name="invalidLoginTest" class="somoCompany.Tests.ErrorValidationsTest"/>
       </group> <!-- errorHandling -->
     </groups>
-    <test started-at="2024-01-22T23:14:22 IST" name="Positive Tests" finished-at="2024-01-22T23:17:48 IST" duration-ms="206362">
+    <test started-at="2024-01-23T23:27:44 IST" name="Positive Tests" finished-at="2024-01-23T23:31:07 IST" duration-ms="202689">
       <class name="somoCompany.Tests.appValidationsTest">
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:14:22 IST" name="initiateDriver" finished-at="2024-01-22T23:14:34 IST" duration-ms="11185" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:27:45 IST" name="initiateDriver" finished-at="2024-01-23T23:27:57 IST" duration-ms="12514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:14:34 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-22T23:15:07 IST" duration-ms="33737" status="PASS">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:27:57 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-23T23:28:32 IST" duration-ms="35145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,15 +28,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:15:07 IST" name="tearDown" finished-at="2024-01-22T23:15:07 IST" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:28:32 IST" name="tearDown" finished-at="2024-01-23T23:28:32 IST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:15:07 IST" name="initiateDriver" finished-at="2024-01-22T23:15:17 IST" duration-ms="10062" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:28:32 IST" name="initiateDriver" finished-at="2024-01-23T23:28:41 IST" duration-ms="8792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:15:17 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-22T23:15:52 IST" duration-ms="34955" status="PASS">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:28:41 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-23T23:29:15 IST" duration-ms="34090" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,15 +47,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:15:52 IST" name="tearDown" finished-at="2024-01-22T23:15:53 IST" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:29:15 IST" name="tearDown" finished-at="2024-01-23T23:29:15 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:15:53 IST" name="initiateDriver" finished-at="2024-01-22T23:16:05 IST" duration-ms="12397" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:29:15 IST" name="initiateDriver" finished-at="2024-01-23T23:29:26 IST" duration-ms="10757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:16:05 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-22T23:16:39 IST" duration-ms="33993" status="PASS">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:29:26 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-23T23:30:00 IST" duration-ms="34318" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,59 +66,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:16:39 IST" name="tearDown" finished-at="2024-01-22T23:16:39 IST" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:30:00 IST" name="tearDown" finished-at="2024-01-23T23:30:01 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:16:39 IST" name="initiateDriver" finished-at="2024-01-22T23:16:50 IST" duration-ms="10536" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:30:01 IST" name="initiateDriver" finished-at="2024-01-23T23:30:09 IST" duration-ms="8606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder2()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:16:50 IST" name="submitOrder2" finished-at="2024-01-22T23:17:38 IST" duration-ms="47932" status="PASS">
+        <test-method signature="submitOrder2()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:30:09 IST" name="submitOrder2" finished-at="2024-01-23T23:30:58 IST" duration-ms="48405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:17:38 IST" name="tearDown" finished-at="2024-01-22T23:17:38 IST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:30:58 IST" name="tearDown" finished-at="2024-01-23T23:30:58 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:17:38 IST" name="initiateDriver" finished-at="2024-01-22T23:17:48 IST" duration-ms="10603" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:30:58 IST" name="initiateDriver" finished-at="2024-01-23T23:31:07 IST" duration-ms="9115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="orderHistoryCheck()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:17:48 IST" name="orderHistoryCheck" finished-at="2024-01-22T23:17:48 IST" depends-on-methods="somoCompany.Tests.appValidationsTest.submitOrder" duration-ms="5" status="PASS">
+        <test-method signature="orderHistoryCheck()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:31:07 IST" name="orderHistoryCheck" finished-at="2024-01-23T23:31:07 IST" depends-on-methods="somoCompany.Tests.appValidationsTest.submitOrder" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistoryCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-22T23:17:48 IST" name="tearDown" finished-at="2024-01-22T23:17:48 IST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@4eaf3684]" started-at="2024-01-23T23:31:07 IST" name="tearDown" finished-at="2024-01-23T23:31:07 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- somoCompany.Tests.appValidationsTest -->
     </test> <!-- Positive Tests -->
-    <test started-at="2024-01-22T23:17:49 IST" name="Negative Tests" finished-at="2024-01-22T23:19:11 IST" duration-ms="82246">
+    <test started-at="2024-01-23T23:31:07 IST" name="Negative Tests" finished-at="2024-01-23T23:32:27 IST" duration-ms="80161">
       <class name="somoCompany.Tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-22T23:17:49 IST" name="initiateDriver" finished-at="2024-01-22T23:18:00 IST" duration-ms="10915" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-23T23:31:07 IST" name="initiateDriver" finished-at="2024-01-23T23:31:16 IST" duration-ms="8682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="invalidLoginTest()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-22T23:18:00 IST" name="invalidLoginTest" finished-at="2024-01-22T23:18:02 IST" duration-ms="2220" status="PASS">
+        <test-method signature="invalidLoginTest()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-23T23:31:16 IST" name="invalidLoginTest" finished-at="2024-01-23T23:31:18 IST" duration-ms="2414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-22T23:18:02 IST" name="tearDown" finished-at="2024-01-22T23:18:02 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-23T23:31:18 IST" name="tearDown" finished-at="2024-01-23T23:31:18 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-22T23:18:02 IST" name="initiateDriver" finished-at="2024-01-22T23:18:11 IST" duration-ms="8579" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-23T23:31:18 IST" name="initiateDriver" finished-at="2024-01-23T23:31:27 IST" duration-ms="9063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder3()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-22T23:18:11 IST" name="submitOrder3" finished-at="2024-01-22T23:19:11 IST" duration-ms="60251" status="PASS">
+        <test-method signature="submitOrder3()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-23T23:31:27 IST" name="submitOrder3" finished-at="2024-01-23T23:32:27 IST" duration-ms="59740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-22T23:19:11 IST" name="tearDown" finished-at="2024-01-22T23:19:11 IST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@43b9fd5]" started-at="2024-01-23T23:32:27 IST" name="tearDown" finished-at="2024-01-23T23:32:27 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
