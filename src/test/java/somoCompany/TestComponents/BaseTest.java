@@ -63,7 +63,7 @@ public class BaseTest {
 			driver = new EdgeDriver();
 		}
 		if (browserName.equals("safari")) {
-			System.setProperty("webdriver.safari.driver", path + "/safari");
+//			System.setProperty("webdriver.safari.driver", path + "/safari");
 			driver = new SafariDriver();
 		}
 
