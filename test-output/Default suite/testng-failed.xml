@@ -7,7 +7,7 @@
         <methods>
           <include name="initiateDriver"/>
           <include name="tearDown"/>
-          <include name="invalidLoginTest"/>
+          <include name="submitOrder3"/>
         </methods>
       </class> <!-- somoCompany.Tests.ErrorValidationsTest -->
     </classes>

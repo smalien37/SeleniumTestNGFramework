@@ -1,7 +1,7 @@
-/Users/som/Documents/SeleniumFrameworkDesign/src/main/java/somoCompany/pageObjects/LandingPage.java
-/Users/som/Documents/SeleniumFrameworkDesign/src/main/java/somoCompany/AbstractComponents/AbstractComponent.java
-/Users/som/Documents/SeleniumFrameworkDesign/src/main/java/somoCompany/pageObjects/OrderIdPage.java
-/Users/som/Documents/SeleniumFrameworkDesign/src/main/java/somoCompany/resources/ExtentReporterNG.java
-/Users/som/Documents/SeleniumFrameworkDesign/src/main/java/somoCompany/pageObjects/PaymentPage.java
-/Users/som/Documents/SeleniumFrameworkDesign/src/main/java/somoCompany/pageObjects/ProductCatalogue.java
-/Users/som/Documents/SeleniumFrameworkDesign/src/main/java/somoCompany/pageObjects/CartDetailsPage.java
+/Users/som/Desktop/AI/SeleniumTestNGFramework/src/main/java/somoCompany/resources/ExtentReporterNG.java
+/Users/som/Desktop/AI/SeleniumTestNGFramework/src/main/java/somoCompany/pageObjects/LandingPage.java
+/Users/som/Desktop/AI/SeleniumTestNGFramework/src/main/java/somoCompany/pageObjects/CartDetailsPage.java
+/Users/som/Desktop/AI/SeleniumTestNGFramework/src/main/java/somoCompany/AbstractComponents/AbstractComponent.java
+/Users/som/Desktop/AI/SeleniumTestNGFramework/src/main/java/somoCompany/pageObjects/OrderIdPage.java
+/Users/som/Desktop/AI/SeleniumTestNGFramework/src/main/java/somoCompany/pageObjects/ProductCatalogue.java
+/Users/som/Desktop/AI/SeleniumTestNGFramework/src/main/java/somoCompany/pageObjects/PaymentPage.java

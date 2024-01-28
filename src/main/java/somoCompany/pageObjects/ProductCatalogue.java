@@ -3,6 +3,7 @@ package somoCompany.pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -59,8 +60,8 @@ public class ProductCatalogue extends AbstractComponent {
 
 	public void addToCart(String productName) {
 
-		getProductByName(productName).findElement(productCard).click();
-		
+		WebElement e = getProductByName(productName).findElement(productCard);
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", e);
 		waitForElementToAppear(toastContr);
 		waitForElementToDisappear(toastContr);
 		waitForElementToDisappear(loadAnime);		

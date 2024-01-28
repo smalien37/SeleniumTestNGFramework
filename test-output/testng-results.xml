@@ -1,128 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-21T20:11:18 IST" name="Suite" finished-at="2024-01-21T20:13:05 IST" duration-ms="106808">
+  <suite started-at="2024-01-28T16:29:44 IST" name="Default suite" finished-at="2024-01-28T16:31:38 IST" duration-ms="114238">
     <groups>
       <group name="purchase">
-        <method signature="appValidationsTest.submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" name="submitOrder" class="somoCompany.Tests.appValidationsTest"/>
+        <method signature="appValidationsTest.submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" name="submitOrder" class="somoCompany.Tests.appValidationsTest"/>
       </group> <!-- purchase -->
-      <group name="errorHandling">
-        <method signature="ErrorValidationsTest.invalidLoginTest()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@50b8ae8d]" name="invalidLoginTest" class="somoCompany.Tests.ErrorValidationsTest"/>
-      </group> <!-- errorHandling -->
     </groups>
-    <test started-at="2024-01-21T20:11:18 IST" name="Negative Tests" finished-at="2024-01-21T20:12:17 IST" duration-ms="58252">
-      <class name="somoCompany.Tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@50b8ae8d]" started-at="2024-01-21T20:11:18 IST" name="initiateDriver" finished-at="2024-01-21T20:11:22 IST" duration-ms="3358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateDriver -->
-        <test-method signature="invalidLoginTest()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@50b8ae8d]" started-at="2024-01-21T20:11:22 IST" name="invalidLoginTest" finished-at="2024-01-21T20:11:23 IST" duration-ms="843" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@50b8ae8d]" started-at="2024-01-21T20:11:23 IST" name="tearDown" finished-at="2024-01-21T20:11:23 IST" duration-ms="116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@50b8ae8d]" started-at="2024-01-21T20:11:23 IST" name="initiateDriver" finished-at="2024-01-21T20:11:26 IST" duration-ms="3336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder3()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@50b8ae8d]" started-at="2024-01-21T20:11:26 IST" name="submitOrder3" finished-at="2024-01-21T20:12:16 IST" duration-ms="50335" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Checkout')]"}
-  (Session info: chrome=120.0.6099.234)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.5.1', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10d9315edc6270457abb9f138f680cb4, findElement {using=xpath, value=//button[contains(text(),'Checkout')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/c5/18j_52b17j5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10d9315edc6270457abb9f138f680cb4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Checkout')]"}
-  (Session info: chrome=120.0.6099.234)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.5.1', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10d9315edc6270457abb9f138f680cb4, findElement {using=xpath, value=//button[contains(text(),'Checkout')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/c5/18j_52b17j5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10d9315edc6270457abb9f138f680cb4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
-at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-at somoCompany.pageObjects.CartDetailsPage.checkOut(CartDetailsPage.java:25)
-at somoCompany.Tests.ErrorValidationsTest.submitOrder3(ErrorValidationsTest.java:75)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.ErrorValidationsTest@50b8ae8d]" started-at="2024-01-21T20:12:17 IST" name="tearDown" finished-at="2024-01-21T20:12:17 IST" duration-ms="112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- somoCompany.Tests.ErrorValidationsTest -->
-    </test> <!-- Negative Tests -->
-    <test started-at="2024-01-21T20:11:18 IST" name="Positive Tests" finished-at="2024-01-21T20:13:05 IST" duration-ms="106808">
+    <test started-at="2024-01-28T16:29:44 IST" name="Default test" finished-at="2024-01-28T16:31:38 IST" duration-ms="114238">
       <class name="somoCompany.Tests.appValidationsTest">
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:11:19 IST" name="initiateDriver" finished-at="2024-01-21T20:11:21 IST" duration-ms="2407" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:29:44 IST" name="initiateDriver" finished-at="2024-01-28T16:29:48 IST" duration-ms="4229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:11:21 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-21T20:11:41 IST" duration-ms="19805" status="PASS">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:29:48 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-28T16:30:08 IST" duration-ms="20093" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,15 +25,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:11:41 IST" name="tearDown" finished-at="2024-01-21T20:11:41 IST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:30:08 IST" name="tearDown" finished-at="2024-01-28T16:30:08 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:11:41 IST" name="initiateDriver" finished-at="2024-01-21T20:11:43 IST" duration-ms="1764" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:30:08 IST" name="initiateDriver" finished-at="2024-01-28T16:30:13 IST" duration-ms="4417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:11:43 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-21T20:12:02 IST" duration-ms="19892" status="PASS">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:30:13 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-28T16:30:32 IST" duration-ms="19888" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,15 +44,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:12:02 IST" name="tearDown" finished-at="2024-01-21T20:12:03 IST" duration-ms="106" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:30:32 IST" name="tearDown" finished-at="2024-01-28T16:30:33 IST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:12:03 IST" name="initiateDriver" finished-at="2024-01-21T20:12:05 IST" duration-ms="2723" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:30:33 IST" name="initiateDriver" finished-at="2024-01-28T16:30:36 IST" duration-ms="3506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:12:05 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-21T20:12:25 IST" duration-ms="19865" status="PASS">
+        <test-method signature="submitOrder(java.util.Map)[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:30:36 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-28T16:30:56 IST" duration-ms="19979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,35 +63,35 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:12:25 IST" name="tearDown" finished-at="2024-01-21T20:12:25 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:30:56 IST" name="tearDown" finished-at="2024-01-28T16:30:56 IST" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:12:25 IST" name="initiateDriver" finished-at="2024-01-21T20:12:29 IST" duration-ms="3535" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:30:56 IST" name="initiateDriver" finished-at="2024-01-28T16:31:01 IST" duration-ms="4422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="submitOrder2()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:12:29 IST" name="submitOrder2" finished-at="2024-01-21T20:13:02 IST" duration-ms="32815" status="PASS">
+        <test-method signature="submitOrder2()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:31:01 IST" name="submitOrder2" finished-at="2024-01-28T16:31:34 IST" duration-ms="33001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:13:02 IST" name="tearDown" finished-at="2024-01-21T20:13:02 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:31:34 IST" name="tearDown" finished-at="2024-01-28T16:31:34 IST" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:13:02 IST" name="initiateDriver" finished-at="2024-01-21T20:13:05 IST" duration-ms="3346" status="PASS">
+        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:31:34 IST" name="initiateDriver" finished-at="2024-01-28T16:31:38 IST" duration-ms="4288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="orderHistoryCheck()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:13:05 IST" name="orderHistoryCheck" finished-at="2024-01-21T20:13:05 IST" depends-on-methods="somoCompany.Tests.appValidationsTest.submitOrder" duration-ms="3" status="PASS">
+        <test-method signature="orderHistoryCheck()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:31:38 IST" name="orderHistoryCheck" finished-at="2024-01-28T16:31:38 IST" depends-on-methods="somoCompany.Tests.appValidationsTest.submitOrder" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistoryCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@24f43aa3]" started-at="2024-01-21T20:13:05 IST" name="tearDown" finished-at="2024-01-21T20:13:05 IST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:somoCompany.Tests.appValidationsTest@75f5fd58]" started-at="2024-01-28T16:31:38 IST" name="tearDown" finished-at="2024-01-28T16:31:38 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- somoCompany.Tests.appValidationsTest -->
-    </test> <!-- Positive Tests -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
