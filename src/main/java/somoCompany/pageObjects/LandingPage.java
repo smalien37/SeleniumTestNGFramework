@@ -1,5 +1,6 @@
 package somoCompany.pageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,7 +35,9 @@ public class LandingPage extends AbstractComponent {
 
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
-		loginButton.click();
+		waitForElementToBeClickable(loginButton);
+//		loginButton.click();
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", loginButton);
 		return new ProductCatalogue(driver);
 	}
 	
