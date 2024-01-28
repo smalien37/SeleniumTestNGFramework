@@ -14,12 +14,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -49,20 +48,28 @@ public class BaseTest {
 		//The above one is for the passing thebrowser from maven command
 		
 //		String browserName = prop.getProperty("browser");
-
-		if (browserName.equals("chrome")) {
+		
+		
+		if (browserName.equals("chromeHeadless")) {
+			System.setProperty("webdriver.chrome.driver", path + "/chromedriver");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+			options.addArguments("start-maximized");
+			driver = new ChromeDriver(options);
+		}
+		else if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", path + "/chromedriver");
 			driver = new ChromeDriver();
 		}
-		if (browserName.equals("firefox")) {
+		else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", path + "/geckodriver");
 			driver = new FirefoxDriver();
 		}
-		if (browserName.equals("edge")) {
+		else if (browserName.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", path + "/edgedriver");
 			driver = new EdgeDriver();
 		}
-		if (browserName.equals("safari")) {
+		else if (browserName.equals("safari")) {
 //			System.setProperty("webdriver.safari.driver", path + "/safari");
 			driver = new SafariDriver();
 		}

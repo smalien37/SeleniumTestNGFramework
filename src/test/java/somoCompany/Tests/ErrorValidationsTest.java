@@ -34,11 +34,12 @@ public class ErrorValidationsTest extends BaseTest{
 		llp = new LandingPage(driver);
 		String url = prop.getProperty("url");
 		llp.goTo(url);
+		System.out.println("The driver is created"+ driver.getTitle());
 //		report = getReportInstance();
 
 	}	
 	
-	@Test(groups = {"errorHandling"})
+	@Test//(groups = {"errorHandling"})
 	public void invalidLoginTest() {
 		
 //		report.createTest("Invalid Login test");
