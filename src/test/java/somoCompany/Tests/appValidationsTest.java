@@ -36,7 +36,7 @@ public class appValidationsTest extends BaseTest {
 		llp = new LandingPage(driver);
 		String url = prop.getProperty("url");
 		llp.goTo(url);
-
+		//This is change
 	}
 
 	@Test(dataProvider="getData", groups = {"purchase"})
