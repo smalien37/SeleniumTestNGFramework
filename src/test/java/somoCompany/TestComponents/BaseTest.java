@@ -88,7 +88,6 @@ public class BaseTest {
 		WebDriver driver = initializeDriver();
 		LandingPage lp = new LandingPage(driver);
 		String url = prop.getProperty("url");
-
 		lp.goTo(url);
 
 		return lp;
